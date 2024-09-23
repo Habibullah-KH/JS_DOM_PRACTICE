@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ebanking</title>
+
+  <!--* tailwind -->
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+  <!--* daisyUI -->
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+
+  <!--* font awsome cdn -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <!--* google font cdn -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!--* css links -->
+  <link rel="stylesheet" href="style.css ">
+</head>
+
+
+<body class="font-Roboto h-[100vh]">
+
+  <main class=" flex justify-center items-center h-full">
+
+<div class="div_container flex">
+
+      <!--* carosole container -->
+    
+      <div class="img_carosole overflow-hidden">
+        <div class="carousel carousel-vertical rounded-l-3xl h-[27rem]">
+          <div class="carousel-item h-full">
+            <img class="w-full" src="https://images.pexels.com/photos/333525/pexels-photo-333525.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+          </div>
+          <div class="carousel-item h-full">
+            <img class="w-full" src="https://images.pexels.com/photos/1443894/pexels-photo-1443894.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+          </div>
+          
+        </div>
+  
+      </div>
+  
+  
+      <!--* Login container -->
+      <div class="container w-96 h-[27rem]">
+  
+  
+      <section class="loginForm text-center">
+  
+        <div class="heading flex">
+        <h1 class="font-bold text-[3rem] p-5 "> 
+          <i class="fa-solid fa-feather-pointed">
+          </i>UFLY</h1>
+      </div>
+  
+        
+        <div class="input_container flex flex-col">
+          <input id="inputname" class="m-1 ml-3 p-4 rounded-3xl " type="text" placeholder="user name">
+          
+          <input disabled id="inputpassword" class="m-1 ml-3 p-4 rounded-3xl " type="number" placeholder="password">
+          <P class="text-red-900 font-bold mt-3 mb-5">Don't share your password</P>
+          
+         <a target="_blank" href="/ticket.html"> <button disabled id="loginBtn" class="btn w-28 m-auto font-bold text-[1.4rem] hover:bg-transparent hover:border-lime-600"> login </button>
+        </div></a>
+      </section>
+    </div>
+
+</div>
+</main>
+
+
+<script src="home.js"></script>
+
+<!--* tailwind -->
+
+<script src="tailwind.config.js"> </script>
+
+<!--* daisyUI -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+</body>
+</html>
