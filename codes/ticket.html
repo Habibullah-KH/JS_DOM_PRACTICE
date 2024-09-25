@@ -1,0 +1,330 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ticket</title>
+
+  <!--* tailwind -->
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+  <!--* daisyUI -->
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+
+  <!--* font awsome cdn -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <!--* google font cdn -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!--* css links -->
+  <link rel="stylesheet" href="codes/style.css ">
+
+  </head>
+  <body >
+
+    <div class="ticket_container m-10 lg:m-[2rem] lg:p-[2rem]">
+
+  <section class="ticket_head">
+
+
+    <div class="text_container flex flex-col items-center text-center">
+
+      <h1 class="font-bold text-[2rem]">
+        <i class="fa-solid fa-paper-plane animate-pulse"></i>
+        UFLY Ticket Counter</h1>
+
+      <p>Yes, You can run unit tests and view the results directly within the app. The integrated testing features allow for a streamined.</p>
+    </div>
+
+    <!--* available seat and ticket price -->
+
+    <div class="ticket_container mt-20 lg:flex pb-20 border-b-4 items-baseline justify-between">
+
+    <div class="ticket_content lg:flex ">
+
+      <div class="ticket_head ">
+
+        <div class="head_title flex items-baseline justify-center">
+          <i class="fa-solid fa-plane-departure  text-[2rem] pr-3"> </i>
+          <div class="title_text_container">
+            <h2 class=" text-[2rem]"> GreenLine Express Service</h2>
+            <p>BNS-001x Economic</p>
+          </div>
+        </div>
+      </div>
+      
+
+          <div class="btn_container mt-10 lg:mt-0 flex items-baseline justify-center text-[1.1rem] px-5 py-4 bg-lime-100 rounded-3xl hover:bg-transparent hover:border-lime-300 hover:border-[2px] h-16 ml-5">
+            <a href="" target="_blank">  <button class=" lg:pl-2 flex items-baseline gap-2">
+          <i class="fa-solid fa-couch"></i>
+          <span class="font-bold" id="available_seat">40</span>
+        <p class="font-bold">seats</p>
+        </button> </a></div>
+
+
+
+    </div> 
+
+
+    <div class="ticketBalance flex justify-around items-center border-dashed">
+
+      <div class="money_container flex p-10  bg-lime-100 rounded-2xl mt-10 lg:mt-0">
+      <i class="fa-solid fa-bangladeshi-taka-sign bg-lime-400 p-8 rounded-full mr-2 flex items-center"></i>
+      <div class="text_container">
+        <h2 class="text-[1.7rem] font-bold">500Taka</h2>
+        <p>per Seat</p></div>
+      </div>
+    </div>
+
+</div>
+
+
+</section>
+
+
+<!--* ticcket container -->
+
+<section class="ticket_silector py-5 lg:w-11/12 mx-auto rounded-2xl grid lg:grid-cols-3 items-center">
+
+  <!--* sit section -->
+  <div class="lg:col-span-2 md:col-span-3 lg:mr-10">
+
+    <div class="p-5">
+      <h2 class="text-2xl font-semibold">Select Your seat</h2>
+    </div>
+
+<div class="border-b-2 border-dashed"></div>
+
+    <div class="flex justify-between p-5">
+      <p>
+      <i class="fa-solid fa-couch"></i>
+      <span>Available</span>
+</p>
+<p class="text-lime-500">
+      <i class="fa-solid fa-couch"></i>
+      <span>Selected</span>
+    
+</p>
+</div>
+
+
+<section class="grid grid-cols-12 items-center gap-y-5 lg:mr-20 lg:pr-10 mb-20 lg:mb-0">
+
+  <p class="col-span-1"></p>
+  <div class="col-span-12 grid grid-cols-10 gap-y-16">
+    <p class="col-span-9"></p>
+
+    <button class="btn col-span-1">
+      <i class="fa-solid fa-id-badge text-[1.5rem]"></i>
+    </button>
+
+  <p class="col-span-1"></p>
+
+  
+  <div class="col-span-11 grid grid-cols-10 lg:gap-16 text-center items-baseline gap-5">
+    <p class="col-span-1">A</p>
+
+    <button onclick="handelClickEvent(this)" class="btn col-span-2 hover:bg-lime-400 transition-colors duration-200 ease-in-out">A1</button>
+    <button onclick="handelClickEvent(this)" class="btn col-span-2 hover:bg-lime-400 transition-colors duration-200 ease-in-out">A2</button>
+    <p class="col-span-1"></p>
+    <button onclick="handelClickEvent(this)" class="btn col-span-2 hover:bg-lime-400 transition-colors duration-200 ease-in-out">A3</button>
+    <button onclick="handelClickEvent(this)" class="btn col-span-2 hover:bg-lime-400 transition-colors duration-200 ease-in-out">A4</button>
+  </div>
+
+
+
+
+
+  <div class="col-span-11 grid grid-cols-10 lg:gap-16 text-center items-baseline gap-5">
+    <p class="col-span-1">B</p>
+
+    <button onclick="handelClickEvent(this)" class="btn col-span-2 hover:bg-lime-400 transition-colors duration-200 ease-in-out">B1</button>
+    <button onclick="handelClickEvent(this)" class="btn col-span-2 hover:bg-lime-400 transition-colors duration-200 ease-in-out">B2</button>
+    <p class="col-span-1"></p>
+    <button onclick="handelClickEvent(this)" class="btn col-span-2 hover:bg-lime-400 transition-colors duration-200 ease-in-out">B3</button>
+    <button onclick="handelClickEvent(this)" class="btn col-span-2 hover:bg-lime-400 transition-colors duration-200 ease-in-out">B4</button>
+  </div>
+
+
+
+
+
+  <div class="col-span-11 grid grid-cols-10 lg:gap-16 text-center items-baseline gap-5">
+    <p class="col-span-1">C</p>
+
+    <button onclick="handelClickEvent(this)" class="btn col-span-2 hover:bg-lime-400 transition-colors duration-200 ease-in-out">C1</button>
+    <button onclick="handelClickEvent(this)" class="btn col-span-2 hover:bg-lime-400 transition-colors duration-200 ease-in-out">C2</button>
+    <p class="col-span-1"></p>
+    <button onclick="handelClickEvent(this)" class="btn col-span-2 hover:bg-lime-400 transition-colors duration-200 ease-in-out">C3</button>
+    <button onclick="handelClickEvent(this)" class="btn col-span-2 hover:bg-lime-400 transition-colors duration-200 ease-in-out">C4</button>
+  </div>
+
+
+
+
+
+  <div class="col-span-11 grid grid-cols-10 lg:gap-16 text-center items-baseline gap-5">
+    <p class="col-span-1">D</p>
+
+    <button onclick="handelClickEvent(this)" class="btn col-span-2 hover:bg-lime-400 transition-colors duration-200 ease-in-out">D1</button>
+    <button onclick="handelClickEvent(this)" class="btn col-span-2 hover:bg-lime-400 transition-colors duration-200 ease-in-out">D2</button>
+    <p class="col-span-1"></p>
+    <button onclick="handelClickEvent(this)" class="btn col-span-2 hover:bg-lime-400 transition-colors duration-200 ease-in-out">D3</button>
+    <button onclick="handelClickEvent(this)" class="btn col-span-2 hover:bg-lime-400 transition-colors duration-200 ease-in-out">D4</button>
+  </div>
+
+
+
+
+
+  <div class="col-span-11 grid grid-cols-10 lg:gap-16 text-center items-baseline gap-5">
+    <p class="col-span-1">E</p>
+
+    <button onclick="handelClickEvent(this)" class="btn col-span-2 hover:bg-lime-400 transition-colors duration-200 ease-in-out">E1</button>
+    <button onclick="handelClickEvent(this)" class="btn col-span-2 hover:bg-lime-400 transition-colors duration-200 ease-in-out">E2</button>
+    <p class="col-span-1"></p>
+    <button onclick="handelClickEvent(this)" class="btn col-span-2 hover:bg-lime-400 transition-colors duration-200 ease-in-out">E3</button>
+    <button onclick="handelClickEvent(this)" class="btn col-span-2 hover:bg-lime-400 transition-colors duration-200 ease-in-out">E4</button>
+  </div>
+
+
+
+</section>
+  </div>
+
+
+  <!--* sit, money count adn cupon section -->
+
+  <div class=" lg:col-span-1  md:col-span-3 md:mt-40">
+
+    <div class="border-b-2 my-4 border-dashed">
+
+      <section class="">
+
+        <div class=" ml-0 p-5 lg:ml-10 rounded-xl text-sm lg:text-xl border-2">
+          <div class="flex justify-between">
+            <p class="flex">
+              <span>seat</span>
+              <span id="seat_count" class="bg-lime-400 w-4 h-4 p-3 flex justify-center items-center rounded-full text-lg">0</span>
+            </p>
+
+            <p>Class</p>
+            <p>Price</p>
+          </div>
+          <div class="border-b-2 my-4 border-dashed"></div>
+          
+          <ul id="ticketCounter" class="space-y-5">
+            <h3 id="defoult-text" class="text-3xl font-semibold text-red-600 capitalize text-center">
+              No Seat Booked
+            </h3>
+            
+          </ul>
+          <div class="border-b-2 my-4 border-dashed"></div>
+
+          <div class="text-lg font-semibold flex justify-between">
+
+            <p>Total Price</p>
+
+            <p>
+              <span>BDT</span>
+              <span id="total-price">****</span>
+            </p>
+          </div>
+
+          <div class="border-b-2 my-4 border-dashed"></div>
+
+          <div id="input-container" class="flex items-center gap-2 my-2 font-semibold justify-between">
+
+            <input id="couponInput" type="text" disabled class="input my-5 w-full input-primary border-primary" placeholder="have a coupon?">
+            <button id="couponBtn" disabled class="brn bg-lime-500 p-3 rounded-lg">Aplay</button>
+          </div>
+          <div class="border-b-2 my-4 border-dashed"></div>
+
+          <div class="text-lg font-semibold flex justify-between">
+
+            <p>Cupn discount</p>
+
+            <p>
+              <span>Grand price Total</span>
+              <span id="grandprice">****</span>
+            </p>
+          </div>
+
+          <!--* form section -->
+
+          <div hidden  id="foram-section" class="my-5">
+
+            <label class="form-control w-full my-3">
+              <div class="label">
+                <span class="label-text font-bold">Passanger name</span>
+              </div>
+              <input type="text" placeholder="Enter Passanger Name" class="input input-bordered w-full" />
+
+            </label>
+
+            <label class="form-control w-full my-3">
+              <div class="label">
+                <span class="label-text font-bold">Phone number</span>
+              </div>
+              <input id="phone-number" type="text" placeholder="Enter Phone number" class="input input-bordered w-full" />
+
+            </label>
+
+            <label class="form-control w-full my-3">
+              <div class="label">
+                <span class="label-text font-bold">Email</span>
+              </div>
+              <input type="text" placeholder="Enter Email Address" class="input input-bordered w-full" />
+
+            </label>
+
+            <button id="nextBtn" disabled class="btn bg-lime-500 mt-5 text-lg w-full" onclick="my_modal_1.showModal()"> Next </button>
+
+            <dialog id="my_modal_1" class="modal">
+              <div class="modal-box">
+                <h3 class="text-lg font-bold">Hello!</h3>
+                <p class="py-4">Thank's for booked</p>
+                <div class="modal-action">
+                  <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button id="closebtn" class="btn">Close</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
+          </div>
+
+
+      </section>
+    </div>
+  </div>
+</section>
+    </div>
+  
+
+
+</div>
+
+
+
+
+
+    <script src="ticket.js"></script>
+
+<!--* daisyUI -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+  </body>
+</html>

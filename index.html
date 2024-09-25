@@ -29,7 +29,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
   <!--* css links -->
-  <link rel="stylesheet" href="style.css ">
+  <link rel="stylesheet" href="codes/style.css">
 </head>
 
 
@@ -37,17 +37,17 @@
 
   <main class=" flex justify-center items-center h-full">
 
-<div class="div_container flex">
+<div class="div_container m-10 md:flex">
 
       <!--* carosole container -->
     
-      <div class="img_carosole overflow-hidden">
-        <div class="carousel carousel-vertical rounded-l-3xl h-[27rem]">
+      <div class="img_carosole overflow-hidden w-full">
+        <div class="carousel carousel-vertical rounded-t-3xl md:rounded-l-3xl md:rounded-tl-3xl md:rounded-t-none  h-[27rem]">
           <div class="carousel-item h-full">
-            <img class="w-full" src="https://images.pexels.com/photos/333525/pexels-photo-333525.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+            <img class="w-full" src="assats/1.png" />
           </div>
           <div class="carousel-item h-full">
-            <img class="w-full" src="https://images.pexels.com/photos/1443894/pexels-photo-1443894.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+            <img class="w-full" src="assats/2.png" />
           </div>
           
         </div>
@@ -56,25 +56,25 @@
   
   
       <!--* Login container -->
-      <div class="container w-96 h-[27rem]">
+      <div class="container h-[27rem] rounded-b-3xl md:rounded-b-none md:rounded-r-3xl border-2 border-yellow-200">
   
   
       <section class="loginForm text-center">
   
         <div class="heading flex">
         <h1 class="font-bold text-[3rem] p-5 "> 
-          <i class="fa-solid fa-feather-pointed">
+          <i class="fa-solid fa-paper-plane animate-pulse"></i>
           </i>UFLY</h1>
       </div>
   
         
         <div class="input_container flex flex-col">
-          <input id="inputname" class="m-1 ml-3 p-4 rounded-3xl " type="text" placeholder="user name">
+          <input id="inputname" class="m-1 ml-3 p-4 rounded-3xl" type="text" placeholder="user name">
           
-          <input disabled id="inputpassword" class="m-1 ml-3 p-4 rounded-3xl " type="number" placeholder="password">
-          <P class="text-red-900 font-bold mt-3 mb-5">Don't share your password</P>
+          <input disabled id="inputpassword" class="m-1 ml-3 p-4 rounded-3xl" type="number" placeholder="password">
+          <P class="text-red-900 font-bold mt-3 mb-5 ">Don't share your password</P>
           
-         <a target="_blank" href="/ticket.html"> <button disabled id="loginBtn" class="btn w-28 m-auto font-bold text-[1.4rem] hover:bg-transparent hover:border-lime-600"> login </button>
+         <a href="codes/ticket.html"> <button disabled id="loginBtn" class="btn w-28 m-auto font-bold text-[1.4rem] hover:bg-transparent hover:border-lime-600"> login </button>
         </div></a>
       </section>
     </div>
@@ -83,11 +83,7 @@
 </main>
 
 
-<script src="home.js"></script>
-
-<!--* tailwind -->
-
-<script src="tailwind.config.js"> </script>
+<script src="codes/home.js"></script>
 
 <!--* daisyUI -->
 <script src="https://cdn.tailwindcss.com"></script>

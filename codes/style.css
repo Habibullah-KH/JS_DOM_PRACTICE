@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after{
+
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container{
+
+  background-image: linear-gradient(to right, #F9F5E0,#F4BCCD,#F5CBD9,#CACFF9);
+  background-position: left;
+  background-size: 500%;
+  animation: clr-animation 5s infinite alternate;
+  /* background-image: url(/assats/3.png);
+  background-position: center;
+  object-fit: cover;
+  width: 100%; */
+  padding: 2rem;
+
+}
+
+@keyframes clr-animation{
+
+  0%{
+    background-position: left;
+  }
+
+  100%{
+    background-position: right;
+  }
+}
