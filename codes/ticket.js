@@ -21,6 +21,7 @@ function handelClickEvent(event){
   const value = event.innerText;
 
   //* alert for reselect button
+  
 
   if (selectBtn.includes(value)){
     return alert('Alrady selected')
@@ -58,7 +59,7 @@ availableSeat.innerText = newAvailableSeatCount;
   if(selectBtn.length > 3 ) {
     couponInput.removeAttribute('disabled')
     couponBtn.removeAttribute('disabled')
-    form.removeAttribute('hidden')
+    
   }
 
 
